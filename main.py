@@ -1,3 +1,8 @@
+import os
+
+if not os.path.exists("chatbot.db"):
+    import db
+
 from fastapi import FastAPI, Header, HTTPException
 import sqlite3
 
